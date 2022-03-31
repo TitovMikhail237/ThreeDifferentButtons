@@ -12,7 +12,7 @@ public class Info extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
-
+//start
         TextView textViewName = findViewById(R.id.textViewNameInfo);
         TextView textViewSurname = findViewById(R.id.textViewSurnameInfo);
         Intent intent = getIntent();
