@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Info extends AppCompatActivity {
 
+    private static final String NAME = "name";
+    private static final String SURNAME = "surname";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,8 +18,8 @@ public class Info extends AppCompatActivity {
         TextView textViewName = findViewById(R.id.textViewNameInfo);
         TextView textViewSurname = findViewById(R.id.textViewSurnameInfo);
         Intent intent = getIntent();
-        String name = intent.getStringExtra("name");
-        String surname = intent.getStringExtra("surname");
+        String name = intent.getStringExtra(NAME);
+        String surname = intent.getStringExtra(SURNAME);
         textViewName.setText(name);
         textViewSurname.setText(surname);
     }

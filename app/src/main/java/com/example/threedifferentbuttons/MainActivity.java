@@ -10,6 +10,8 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String NAME = "name";
+    private static final String SURNAME = "surname";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         EditText editText = findViewById(R.id.editTextInfo);
         EditText editText2 = findViewById(R.id.editTextInfo2);
         Button buttonInfo = findViewById(R.id.buttonInfoActivityMain);
@@ -40,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Info.class);
-                intent.putExtra("name",editText.getText().toString());
-                intent.putExtra("surname", editText2.getText().toString());
+                intent.putExtra(NAME,editText.getText().toString());
+                intent.putExtra(SURNAME, editText2.getText().toString());
                 startActivity(intent);
             }
         });
