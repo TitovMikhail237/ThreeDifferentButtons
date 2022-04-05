@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddInformation">
+
+    <EditText
+        android:id="@+id/editTextInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:hint="Enter your name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your surname"
+        app:layout_constraintEnd_toEndOf="@+id/editTextInfo"
+        app:layout_constraintStart_toStartOf="@+id/editTextInfo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInfo"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextInfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your age"
+        app:layout_constraintEnd_toEndOf="@+id/editTextInfo2"
+        app:layout_constraintStart_toStartOf="@+id/editTextInfo2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInfo2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonAddActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add Info"
+        app:layout_constraintEnd_toEndOf="@+id/editTextInfo3"
+        app:layout_constraintStart_toStartOf="@+id/editTextInfo3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInfo3"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

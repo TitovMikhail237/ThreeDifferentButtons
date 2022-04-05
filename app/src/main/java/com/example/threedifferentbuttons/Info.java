@@ -10,6 +10,7 @@ public class Info extends AppCompatActivity {
 
     private static final String NAME = "name";
     private static final String SURNAME = "surname";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

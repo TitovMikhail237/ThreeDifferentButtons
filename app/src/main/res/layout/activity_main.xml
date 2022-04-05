@@ -10,64 +10,43 @@
         android:id="@+id/buttonToastActivityMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="Toast"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.405"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonRecyclerViewActivityMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Recycler View"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextInfo"
-        android:layout_width="163dp"
-        android:layout_height="42dp"
-        android:hint="Enter your name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.624"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextInfo2"
-        android:layout_width="163dp"
-        android:layout_height="42dp"
-        android:hint="Enter your surname"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.718"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="@+id/buttonToastActivityMain"
+        app:layout_constraintStart_toStartOf="@+id/buttonToastActivityMain"
+        app:layout_constraintTop_toBottomOf="@+id/buttonToastActivityMain"
+        tools:ignore="MissingConstraints"/>
 
     <Button
-        android:id="@+id/buttonInfoActivityMain"
+        android:id="@+id/buttonRegistration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Info"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="20dp"
+        android:text="Registration"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRecyclerViewActivityMain"
+        app:layout_constraintStart_toStartOf="@+id/buttonRecyclerViewActivityMain"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRecyclerViewActivityMain" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Intent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRegistration"
+        app:layout_constraintStart_toStartOf="@+id/buttonRegistration"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegistration" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
