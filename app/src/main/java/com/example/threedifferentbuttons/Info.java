@@ -6,22 +6,29 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.w3c.dom.Text;
+
 public class Info extends AppCompatActivity {
 
-    private static final String NAME = "name";
-    private static final String SURNAME = "surname";
+    //TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
 
+
         TextView textViewName = findViewById(R.id.textViewNameInfo);
         TextView textViewSurname = findViewById(R.id.textViewSurnameInfo);
+        TextView textViewAge = findViewById(R.id.textViewAgeInfo);
+
+
         Intent intent = getIntent();
-        String name = intent.getStringExtra(NAME);
-        String surname = intent.getStringExtra(SURNAME);
-        textViewName.setText(name);
-        textViewSurname.setText(surname);
+        User user = (User)intent.getSerializableExtra("newUser");
+        textViewName.setText(user.getName());
+        textViewSurname.setText(user.getSurname());
+        textViewAge.setText(Integer.toString(user.getAge()));
+
+
     }
 }
