@@ -46,7 +46,10 @@ public class MainActivity extends AppCompatActivity {
         buttonIntent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, IntentActivity.class);
+                Intent intent = new Intent(MainActivity.this, ShowIntentActivity.class);
+                intent.putExtra("int", 10);
+                intent.putExtra("double", 5.5);
+                intent.putExtra("boolean", true);
                 startActivity(intent);
             }
         });

@@ -10,10 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ThreeDifferentButtons">
         <activity
-            android:name=".ShowIntent"
-            android:exported="false" />
-        <activity
-            android:name=".IntentActivity"
+            android:name=".ShowIntentActivity"
             android:exported="false" />
         <activity
             android:name=".AddInformation"
