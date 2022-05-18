@@ -3,7 +3,9 @@ package com.example.threedifferentbuttons;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -60,6 +62,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, TaskActivity .class);
                 startActivity(intent);
+            }
+        });
+
+        Button buttonIntentToWebPage = findViewById(R.id.buttonIntentToWebPage);
+        buttonIntentToWebPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri addres = Uri.parse("https://www.ufc.com");
+                Intent openSite = new Intent(Intent.ACTION_VIEW, addres);
+
+                if(openSite.resolveActivity(getPackageManager()) !=null){
+                    startActivity(openSite);
+                }
+                else{
+                    Log.d("Intent", "Can't using this site");
+                }
             }
         });
 
