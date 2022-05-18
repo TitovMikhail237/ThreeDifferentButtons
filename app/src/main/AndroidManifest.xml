@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ThreeDifferentButtons">
         <activity
+            android:name=".TaskActivity"
+            android:exported="false"
+            android:label="@string/title_activity_task"
+            android:theme="@style/Theme.ThreeDifferentButtons.NoActionBar" />
+        <activity
             android:name=".ShowIntentActivity"
             android:exported="false" />
         <activity

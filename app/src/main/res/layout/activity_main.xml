@@ -48,5 +48,15 @@
         app:layout_constraintStart_toStartOf="@+id/buttonRegistration"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegistration" />
 
+    <Button
+        android:id="@+id/buttonTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="task"
+        app:layout_constraintEnd_toEndOf="@+id/buttonIntent"
+        app:layout_constraintStart_toStartOf="@+id/buttonIntent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIntent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

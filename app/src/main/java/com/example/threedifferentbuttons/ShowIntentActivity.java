@@ -2,9 +2,11 @@ package com.example.threedifferentbuttons;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 public class ShowIntentActivity extends AppCompatActivity {
 
     @Override
@@ -19,13 +21,13 @@ public class ShowIntentActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         int intValue = intent.getIntExtra("int", 0);
-        intView.setText(Integer.toString(intValue));
-
+        intView.setText(String.valueOf(intValue));
+        Log.d("TAG", String.valueOf(intValue));
         double doubleValue = intent.getDoubleExtra("double", 0);
-        doubleView.setText(Double.toString(doubleValue));
+        doubleView.setText(String.valueOf(doubleValue));
 
         boolean booleanValue = intent.getBooleanExtra("boolean", false);
-        booleanView.setText(Boolean.toString(booleanValue));
+        booleanView.setText(String.valueOf(booleanValue));
 
     }
 }
